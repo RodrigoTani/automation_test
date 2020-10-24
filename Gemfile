@@ -1,0 +1,17 @@
+source 'https://rubygems.org'
+
+ruby '2.6.6'
+
+gem 'cucumber'
+gem 'rspec'
+gem 'capybara'
+gem 'selenium-webdriver'
+gem 'httparty'
+gem 'pry'
+gem 'json'
+gem 'parallel_tests'
+gem 'parallel'
+gem 'colorize'
+gem 'faker'
+gem 'pg'
+gem 'rails'

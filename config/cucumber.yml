@@ -1,0 +1,7 @@
+# default: --no-source --color --format pretty
+report: --color -f progress -f html -o reports/execution_report.html
+report_json: --color -f progress -f json -o execution_log.json
+parallel: -f json -o execution_log<%=ENV['TEST_ENV_NUMBER']%>.json -x -f rerun -o cucumber_failures<%=ENV['TEST_ENV_NUMBER']%>.txt
+ci: -f json -o execution_log.json -x -f rerun -o cucumber_failures.txt
+rerun: -f json -o execution_log_rerun.json -x
+default: --no-source --color --format pretty --format pretty --expand --format json --out=reports/report.json
